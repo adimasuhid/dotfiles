@@ -73,7 +73,8 @@ set softtabstop=2
 set shiftwidth=2
 set noswapfile
 set expandtab
-
+set backspace=indent,eol,start
+  
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline_fugitive_prefix = ''
@@ -86,14 +87,12 @@ au BufNewFile,BufRead *.jade set filetype=haml
 au BufNewFile,BufRead *.hamljs set filetype=haml
 
 " CLIPBOARD
-set clipboard=unnamedplus
-
 let os=substitute(system('uname'), '\n', '', '')
 if os == 'Darwin' || os == 'Mac'
   vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
 elseif os == 'Linux'
   vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", ge
- endif
+endif
 
 function! NumberToggle()
   if(&relativenumber == 1)
