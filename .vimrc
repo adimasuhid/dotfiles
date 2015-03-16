@@ -10,6 +10,9 @@ Plugin 'vim-scripts/ZoomWin'
 " Emmet
 Plugin 'mattn/emmet-vim'
 
+" Git commands
+Plugin 'tpope/vim-fugitive'
+
 " Commenter
 Plugin 'scrooloose/nerdcommenter'
 
