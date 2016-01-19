@@ -26,7 +26,7 @@ Plugin 'sjl/badwolf'
 Plugin 'scrooloose/nerdtree'
 
 " CtrlP
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " Haml
 Plugin 'tpope/vim-haml'
@@ -48,6 +48,15 @@ Plugin 'vim-scripts/groovy.vim'
 
 " Vim Rspec
 Plugin 'thoughtbot/vim-rspec'
+
+" Dispatch
+Plugin 'tpope/vim-dispatch'
+
+" Emblem
+Plugin 'heartsentwined/vim-emblem'
+
+" Elixir
+Plugin 'elixir-lang/vim-elixir'
 
 call vundle#end()
 
@@ -97,12 +106,13 @@ let g:airline_right_sep = ''
 let g:airline_fugitive_prefix = ''
 let g:airline_theme='hybrid'
 let g:rspec_runner = "os_x_iterm2"
-
+let g:rspec_command = "Dispatch! bin/spring rspec {spec}"
 
 " Buffers
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.jade set filetype=haml
 au BufNewFile,BufRead *.hamljs set filetype=haml
+au BufNewFile,BufRead *.slim set filetype=haml
 
 " CLIPBOARD
 let os=substitute(system('uname'), '\n', '', '')
