@@ -46,9 +46,6 @@ Plugin 'bling/vim-airline'
 " Groovy
 Plugin 'vim-scripts/groovy.vim'
 
-" Vim Rspec
-Plugin 'thoughtbot/vim-rspec'
-
 " Dispatch
 Plugin 'tpope/vim-dispatch'
 
@@ -57,6 +54,9 @@ Plugin 'heartsentwined/vim-emblem'
 
 " Elixir
 Plugin 'elixir-lang/vim-elixir'
+
+" Vim Test
+Plugin 'janko-m/vim-test'
 
 call vundle#end()
 
@@ -79,11 +79,12 @@ map <Tab> :NERDTreeToggle <cr>
 nnoremap <leader>n :NERDTreeToggle <cr>
 nn <leader>zz :ZoomWin<cr>
 
-" Rspec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+" Vim Test mappings
+nmap ;rr :!elixir %<cr>
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>a :TestSuite<CR>
 
 " UI
 set guifont=*
@@ -100,6 +101,7 @@ set expandtab
 set backspace=indent,eol,start
 set visualbell
 set shell=/bin/sh
+set incsearch
   
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
@@ -119,7 +121,7 @@ let os=substitute(system('uname'), '\n', '', '')
 if os == 'Darwin' || os == 'Mac'
   vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
 elseif os == 'Linux'
-  vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", ge
+  vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
 endif
 
 function! NumberToggle()
