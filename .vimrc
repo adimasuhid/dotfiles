@@ -52,11 +52,11 @@ Plugin 'tpope/vim-dispatch'
 " Emblem
 Plugin 'heartsentwined/vim-emblem'
 
-" Elixir
-Plugin 'elixir-lang/vim-elixir'
-
 " Vim Test
 Plugin 'janko-m/vim-test'
+
+" Elixir
+Plugin 'elixir-lang/vim-elixir'
 
 call vundle#end()
 
