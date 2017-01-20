@@ -58,6 +58,14 @@ Plugin 'janko-m/vim-test'
 " Elixir
 Plugin 'elixir-lang/vim-elixir'
 
+" Javascript
+
+Plugin 'pangloss/vim-javascript'
+
+" React
+
+Plugin 'mxw/vim-jsx'
+
 call vundle#end()
 
 syntax enable
@@ -115,6 +123,7 @@ au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.jade set filetype=haml
 au BufNewFile,BufRead *.hamljs set filetype=haml
 au BufNewFile,BufRead *.slim set filetype=haml
+au BufNewFile,BufRead *.thor set filetype=ruby
 
 " CLIPBOARD
 let os=substitute(system('uname'), '\n', '', '')
