@@ -1,5 +1,10 @@
 # Dotfiles for VIM
 
+### Prerequisites
+
+Git
+Vundle
+
 ### Setup
 
 Clone this repo into your home directory:
