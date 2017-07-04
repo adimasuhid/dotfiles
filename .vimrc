@@ -117,6 +117,7 @@ let g:airline_fugitive_prefix = ''
 let g:airline_theme='hybrid'
 let g:rspec_runner = "os_x_iterm2"
 let g:rspec_command = "Dispatch! bin/spring rspec {spec}"
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " Buffers
 au BufNewFile,BufRead *.ejs set filetype=html
