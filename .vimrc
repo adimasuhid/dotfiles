@@ -100,7 +100,6 @@ set guifont=Monaco:h10
 set nowrap
 set hlsearch
 set mouse=ncr
-set relativenumber
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
@@ -110,6 +109,7 @@ set backspace=indent,eol,start
 set visualbell
 set shell=/bin/sh
 set incsearch
+set number
   
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
