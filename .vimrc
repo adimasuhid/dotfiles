@@ -59,12 +59,13 @@ Plugin 'janko-m/vim-test'
 Plugin 'elixir-lang/vim-elixir'
 
 " Javascript
-
 Plugin 'pangloss/vim-javascript'
 
 " React
-
 Plugin 'mxw/vim-jsx'
+
+" Slim
+Plugin 'slim-template/vim-slim.git'
 
 call vundle#end()
 
@@ -123,7 +124,8 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.jade set filetype=haml
 au BufNewFile,BufRead *.hamljs set filetype=haml
-au BufNewFile,BufRead *.slim set filetype=haml
+au BufNewFile,BufRead *.slim set filetype=slim
+au BufNewFile,BufRead *.slime set filetype=slim
 au BufNewFile,BufRead *.thor set filetype=ruby
 
 " CLIPBOARD
