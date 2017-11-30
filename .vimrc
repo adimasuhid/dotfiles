@@ -67,6 +67,10 @@ Plugin 'mxw/vim-jsx'
 " Slim
 Plugin 'slim-template/vim-slim.git'
 
+" Markdown
+Plugin 'gabrielelana/vim-markdown'
+Plugin 'JamshedVesuna/vim-markdown-preview'
+
 call vundle#end()
 
 syntax enable
@@ -112,6 +116,7 @@ set shell=/bin/sh
 set incsearch
 set number
   
+" Plugin configs
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline_fugitive_prefix = ''
@@ -119,6 +124,8 @@ let g:airline_theme='hybrid'
 let g:rspec_runner = "os_x_iterm2"
 let g:rspec_command = "Dispatch! bin/spring bundle exec rspec {spec}"
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|beam'
+let vim_markdown_preview_github=1
+let vim_markdown_preview_hotkey='<C-m>'
 
 " Buffers
 au BufNewFile,BufRead *.ejs set filetype=html
