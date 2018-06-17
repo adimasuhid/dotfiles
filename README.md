@@ -19,6 +19,13 @@ Symlink `.vimrc` as your home `.vimrc`
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ```
 
+Symlink `.gitignore` as your global `.gitignore`
+
+
+```
+ln -s ~/dotfiles/.gitignore ~/.gitignore
+```
+
 Install Vundle via their [QuickStart](https://github.com/VundleVim/Vundle.vim)
 
 Install Plugins
