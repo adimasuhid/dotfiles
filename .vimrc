@@ -22,8 +22,11 @@ Plugin 'Keithbsmiley/rspec.vim'
 " Badwolf
 Plugin 'sjl/badwolf'
 
+" Deus
+Plugin 'ajmwagar/vim-deus'
+
 " NerdTree
-Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree' 
 
 " CtrlP
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -71,14 +74,16 @@ Plugin 'slim-template/vim-slim.git'
 Plugin 'gabrielelana/vim-markdown'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 
+" Python
+Plugin 'vim-python/python-syntax'
+
 call vundle#end()
 
 syntax enable
 filetype plugin indent on
 
 set t_Co=256
-set background=dark
-colorscheme badwolf
+colorscheme deus
 
 au! BufNewFile,BufRead crontab.* set nobackup | set nowritebackup
 
@@ -120,7 +125,6 @@ set number
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline_fugitive_prefix = ''
-let g:airline_theme='hybrid'
 let g:rspec_runner = "os_x_iterm2"
 let g:rspec_command = "Dispatch! bin/spring bundle exec rspec {spec}"
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|beam'
