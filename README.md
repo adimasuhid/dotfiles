@@ -21,9 +21,14 @@ ln -s ~/dotfiles/.vimrc ~/.vimrc
 
 Symlink `.gitignore` as your global `.gitignore`
 
-
 ```
 ln -s ~/dotfiles/.gitignore ~/.gitignore
+```
+
+Set `.gitignore` as global
+
+```
+git config --global core.excludesfile ~/.gitignore
 ```
 
 Install Vundle via their [QuickStart](https://github.com/VundleVim/Vundle.vim)
