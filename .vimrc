@@ -130,6 +130,7 @@ let g:rspec_command = "Dispatch! bin/spring bundle exec rspec {spec}"
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|beam'
 let vim_markdown_preview_github=1
 let vim_markdown_preview_hotkey='<C-m>'
+let test#javascript#mocha#options = '--require babel-core/register'
 
 " Buffers
 au BufNewFile,BufRead *.ejs set filetype=html
