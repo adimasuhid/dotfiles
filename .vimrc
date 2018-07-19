@@ -124,6 +124,7 @@ set number
 " Plugin configs
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
+let g:airline_section_b = ''
 let g:airline_fugitive_prefix = ''
 let g:rspec_runner = "os_x_iterm2"
 let g:rspec_command = "Dispatch! bin/spring bundle exec rspec {spec}"
