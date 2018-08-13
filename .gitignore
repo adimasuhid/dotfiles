@@ -7,3 +7,5 @@ dump.rdb
 .tool-versions
 
 .credentials
+localhost.crt
+localhost.key
