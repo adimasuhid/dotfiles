@@ -17,7 +17,7 @@ Mac refresh installation checklist
 - Memory Clean
 
 ## Packages
-- fish
+- fish (package manager: fisher)
 - brew
 - asdf (handlers: ruby, elixir, node)
 - vim
@@ -29,3 +29,4 @@ Mac refresh installation checklist
 - ruby (asdf)
 - elixir (asdf)
 - node (asdf)
+- rust (rustup)
