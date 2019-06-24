@@ -9,3 +9,6 @@ dump.rdb
 .credentials
 localhost.crt
 localhost.key
+
+coverage/
+*.backup

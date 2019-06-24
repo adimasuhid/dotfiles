@@ -77,6 +77,15 @@ Plugin 'JamshedVesuna/vim-markdown-preview'
 " Python
 Plugin 'vim-python/python-syntax'
 
+" Rust
+Plugin 'rust-lang/rust.vim'
+
+" Handlebars
+Plugin 'mustache/vim-mustache-handlebars'
+
+" Haskell
+Plugin 'neovimhaskell/haskell-vim'
+
 call vundle#end()
 
 syntax enable
