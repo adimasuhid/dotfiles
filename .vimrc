@@ -86,9 +86,12 @@ Plugin 'mustache/vim-mustache-handlebars'
 " Haskell
 Plugin 'neovimhaskell/haskell-vim'
 
+" Salesforce
+Plugin 'neowit/vim-force.com'
+
 call vundle#end()
 
-syntax enable
+syntax on
 filetype plugin indent on
 
 set t_Co=256
@@ -149,6 +152,7 @@ au BufNewFile,BufRead *.hamljs set filetype=haml
 au BufNewFile,BufRead *.slim set filetype=slim
 au BufNewFile,BufRead *.slime set filetype=slim
 au BufNewFile,BufRead *.thor set filetype=ruby
+au BufNewFile,BufRead *.cmp set filetype=aura-xml
 
 " CLIPBOARD
 let os=substitute(system('uname'), '\n', '', '')

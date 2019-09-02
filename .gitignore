@@ -5,6 +5,7 @@
 dump.rdb
 
 .tool-versions
+.ruby-version
 
 .credentials
 localhost.crt
@@ -12,3 +13,6 @@ localhost.key
 
 coverage/
 *.backup
+*.dump
+
+.env
