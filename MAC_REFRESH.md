@@ -16,7 +16,7 @@ Mac refresh installation checklist
 - Messenger
 - Memory Clean
 - Flowdock
-- Page resizer
+- Spectacle app (page resizer)
 
 ## Packages
 - fish (package manager: fisher)
