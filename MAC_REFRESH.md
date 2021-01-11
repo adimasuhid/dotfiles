@@ -3,6 +3,7 @@
 Mac refresh installation checklist
 
 ## Apps
+- Xcode
 - Iterm
 - Alfred
 - Dropbox
