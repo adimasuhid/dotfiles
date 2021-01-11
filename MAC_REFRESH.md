@@ -29,7 +29,7 @@ Mac refresh installation checklist
 
 ## Languages
 - java (installer)
-- ruby (asdf)
+- ruby (rbenv)
 - elixir (asdf)
 - node (asdf)
 - rust (rustup)
