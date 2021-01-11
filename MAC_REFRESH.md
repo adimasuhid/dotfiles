@@ -18,6 +18,7 @@ Mac refresh installation checklist
 - Memory Clean
 - Flowdock
 - Spectacle app (page resizer)
+- Giphy
 
 ## Packages
 - fish (package manager: fisher)
