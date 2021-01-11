@@ -15,6 +15,8 @@ Mac refresh installation checklist
 - Skype
 - Messenger
 - Memory Clean
+- Flowdock
+- Page resizer
 
 ## Packages
 - fish (package manager: fisher)
