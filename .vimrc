@@ -57,6 +57,7 @@ Plugin 'heartsentwined/vim-emblem'
 
 " Vim Test
 Plugin 'janko-m/vim-test'
+Plugin 'thoughtbot/vim-rspec'
 
 " Elixir
 Plugin 'elixir-lang/vim-elixir'
