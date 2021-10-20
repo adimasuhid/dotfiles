@@ -77,6 +77,10 @@ plugins=(git zsh-autosuggestions history-substring-search zsh-syntax-highlightin
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#ffaf5f'
 source $ZSH/oh-my-zsh.sh
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

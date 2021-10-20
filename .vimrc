@@ -73,7 +73,7 @@ Plugin 'slim-template/vim-slim.git'
 
 " Markdown
 Plugin 'gabrielelana/vim-markdown'
-Plugin 'JamshedVesuna/vim-markdown-preview'
+Plugin 'iamcco/markdown-preview.nvim'
 
 " Python
 Plugin 'vim-python/python-syntax'
@@ -89,6 +89,9 @@ Plugin 'neovimhaskell/haskell-vim'
 
 " Salesforce
 Plugin 'neowit/vim-force.com'
+
+" Postgresql
+Plugin 'lifepillar/pgsql.vim'
 
 call vundle#end()
 
@@ -116,6 +119,9 @@ nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>a :TestSuite<CR>
+
+" Markdown
+nmap <C-m> <Plug>MarkdownPreview
 
 " UI
 set guifont=*
@@ -145,6 +151,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|beam'
 let vim_markdown_preview_github=1
 let vim_markdown_preview_hotkey='<C-m>'
 let test#javascript#mocha#options = '--require babel-core/register'
+let g:sql_type_default = 'pgsql'
 
 " Buffers
 au BufNewFile,BufRead *.ejs set filetype=html
