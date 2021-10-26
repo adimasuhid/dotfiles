@@ -19,9 +19,10 @@ Mac refresh installation checklist
 - Flowdock
 - Spectacle app (page resizer)
 - Giphy
+- Postgres.app (because brew has bitten more than we should)
 
 ## Packages
-- fish (package manager: fisher)
+- oh-my-zsh built in
 - brew
 - asdf (handlers: ruby, elixir, node)
 - vim
