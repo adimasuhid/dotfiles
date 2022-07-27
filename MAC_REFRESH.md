@@ -20,6 +20,7 @@ Mac refresh installation checklist
 - Spectacle app (page resizer)
 - Giphy
 - Postgres.app (because brew has bitten more than we should)
+- Elecom huge mouse config - [Download](https://www.elecom.co.jp/global/download-list/utility/mouse_assistant/mac/)
 
 ## Packages
 - oh-my-zsh built in
