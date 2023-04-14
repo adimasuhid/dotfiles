@@ -93,6 +93,9 @@ Plugin 'neowit/vim-force.com'
 " Postgresql
 Plugin 'lifepillar/pgsql.vim'
 
+" Copilot
+Plugin 'github/copilot.vim'
+
 call vundle#end()
 
 syntax on
