@@ -19,6 +19,12 @@ Symlink `.vimrc` as your home `.vimrc`
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ```
 
+Symlink `.zshrc` as your global `.zshrc`
+
+```
+ln -s ~/dotfiles/.zshrc ~/.zshrc
+```
+
 Symlink `.gitignore` as your global `.gitignore`
 
 ```
