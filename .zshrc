@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Rbenv init
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 ZSH_DISABLE_COMPFIX=true
 # Path to your oh-my-zsh installation.
@@ -109,4 +109,9 @@ export NVM_DIR="$HOME/.nvm"
 
 export EDITOR='vim'
 
+export PATH=/opt/homebrew/bin:$PATH
+
 source $HOME/.zprofile
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
