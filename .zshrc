@@ -115,3 +115,28 @@ source $HOME/.zprofile
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Switch branches through fuzzy finder
+gw() {
+  if [[ -z "$1" ]]; then
+    local branch
+    branch=$(git branch --sort=-committerdate | fzf | tr -d ' +')
+    [[ -z "$branch" ]] && return
+    local worktree_path
+    worktree_path=$(git worktree list | grep "\[$branch\]" | awk '{print $1}')
+    if [[ -n "$worktree_path" ]]; then
+      cd "$worktree_path"
+    else
+      git switch "$branch"
+    fi
+  else
+    git switch "$@"
+  fi
+}
+
+# Autocomplete branch arg
+_gw() {
+  local branches=("${(@f)$(git branch --format='%(refname:short)' 2>/dev/null)}")
+  _describe 'branch' branches
+}
+compdef _gw gw
